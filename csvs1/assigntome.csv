@@ -1,2 +1,0 @@
-"timestamp [UTC]",message,severityLevel,itemType,customDimensions
-"8/27/2025, 2:12:09.803 AM",CLWorkFlow,1,trace,"{""action"":""Assign To Me"":""tasknum"":""TASK-936349""}"
