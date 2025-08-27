@@ -1,0 +1,35 @@
+/deep-planning
+There are 4 files inside the csvs folder:
+- useravailability.csv contains records of when a Task was Opened and by who
+- users.csv contains a list of users for the system
+- taskhistories.csv contains the task ID and which action, when and by who
+- openCambridgeTime.csv contains when and who has entered the page
+- gcp.json contains the "Auto" assignment of tasks
+
+Naming conventions
+- Task and C&L-Task are the same thing
+  - Task's naming convention is prefix "Task-" with numbers after
+- for MC Status:
+  - PME with action AS means the task has been assigned to a user
+  - PME with status RP means the task has been assigned back to a user
+  - PME with status RR means the task has been assigned to a third party and away from the user
+  - PME with status PL means the task has been assigned to a third party and away from the user
+  - PMA with action IN means the task has been created
+  - PCA with action SC means the task has been completed by the user
+
+If you have a look at gcp.json, the textPayload will contain assignment of task and email. A timestamp is also there in the json file.
+
+The problem that I have is that Productive Time is missing for some entries in useravailability. And I would like to try and populate the numbers back.
+
+Productive Time is the number of minutes between a task being opened by the user to the time the task has been completed by the user.
+
+In Addition, I would like to have a new field called "Waiting Time", which is the number of minutes a task has been created and the task being assigned.
+
+Another field to be created is called "Mode". Mode has 3 values:
+- "Unknown"
+- "Manual" is when the task does not exists in useravailability.csv
+- "Auto" is when the task exists in useravailability.csv
+
+Please see if you can use Javascript to help generate a report like this.
+
+The report should output a csv file with "Task","User","Productive Time","Waiting Time","Mode"

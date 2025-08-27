@@ -1,0 +1,4 @@
+task,userName,userEmail,mode,createdTime,assignedTime,makerCompleteTime,openTime,productiveTime,waitingTime
+TASK-913902,User B,b@hsbc.com,Manual,,,,,,
+TASK-931132,User C,c@hsbc.com,Manual,,,,,,
+TASK-16515,User Goo,abc1.goo@onextrememail.hsbc.com,Auto,,2025-08-25T13:20:00.000Z,,,,

@@ -1,0 +1,34 @@
+{
+  "name": "task-performance-report",
+  "version": "1.0.0",
+  "description": "Generate task performance reports with Productive Time, Waiting Time, and Mode calculations",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "dev": "node --watch src/index.js"
+  },
+  "keywords": [
+    "csv",
+    "report",
+    "performance",
+    "analytics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "csv-stringify": "^6.6.0",
+    "fast-csv": "^4.3.6",
+    "JSONStream": "^1.3.5",
+    "lodash": "^4.17.21",
+    "memory-streams": "^0.1.3",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
